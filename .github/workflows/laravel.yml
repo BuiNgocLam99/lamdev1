@@ -13,9 +13,7 @@ jobs:
 
     steps:
     - name: Run script file
-      run: | 
-        chmod +x ../../../devops/build-server.sh 
-        ../../../devops/build-server.sh
+      run: bash ../../devops/build-server.sh
       shell: bash
     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
       with:
